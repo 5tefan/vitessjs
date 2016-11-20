@@ -22,6 +22,6 @@ Use the following to Synchronize the proto definitions with remote Vitess. [3]
 git pull -s subtree vitess master
 ```
 
-[1] http://bneijt.nl/blog/post/merge-a-subdirectory-of-another-repository-with-git/
-[2] https://git-scm.com/book/en/v1/Git-Tools-Subtree-Merging
-[3] https://help.github.com/articles/about-git-subtree-merges/
+- [1] http://bneijt.nl/blog/post/merge-a-subdirectory-of-another-repository-with-git/
+- [2] https://git-scm.com/book/en/v1/Git-Tools-Subtree-Merging
+- [3] https://help.github.com/articles/about-git-subtree-merges/
