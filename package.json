@@ -1,0 +1,30 @@
+{
+  "name": "vitessjs",
+  "version": "1.0.0",
+  "description": "Nodejs client library for Vitess",
+  "main": "vitess.js",
+  "scripts": {
+    "build": "protoc --js_out=import_style=commonjs,binary:lib/ --grpc_out=lib/ --plugin=protoc-gen-grpc=$(npm root)/grpc-tools/bin/grpc_node_plugin --proto_path=proto/ proto/*.proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5tefan/vitessjs.git"
+  },
+  "keywords": [
+    "Vitess",
+    "MySQL"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5tefan/vitessjs/issues"
+  },
+  "homepage": "https://github.com/5tefan/vitessjs#readme",
+  "dependencies": {
+    "google-protobuf": "^3.1.1",
+    "grpc": "^1.0.1"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.0.1"
+  }
+}
