@@ -2,7 +2,7 @@
   "name": "vitessjs",
   "version": "1.0.0",
   "description": "Nodejs client library for Vitess",
-  "main": "vitess.js",
+  "main": "index.js",
   "scripts": {
     "build": "protoc --js_out=import_style=commonjs,binary:lib/ --grpc_out=lib/ --plugin=protoc-gen-grpc=$(npm root)/grpc-tools/bin/grpc_node_plugin --proto_path=proto/ proto/*.proto"
   },
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "Vitess",
-    "MySQL"
+    "vtgate",
+    "client"
   ],
   "author": "",
   "license": "ISC",
