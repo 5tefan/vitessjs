@@ -1,9 +1,21 @@
 # vitessjs
-Nodejs client library for Vitess
+
+Nodejs bindings for Vitess implementing an rpc interface with vtgate.
+
+Design is influenced by the Java com.youtube.vitess.client, [mysqljs/mysql](https://github.com/mysqljs/mysql),
+and [mongdb/node-mongodb-native](mongodb/node-mongodb-native/).
+
+Given the nature of rpcs and javascript, these bindings are asychronous and make heavy use
+of promises.
+
+## Notes
+
+Not implementing a Context object seen in most other implementations. Just going to use CallerID on its own.
+Perhaps the place for deadline like funcitonality would be in a cusom Promise. Right now using the global.
 
 
 
-## Importing Vitess proto definitions
+### Importing Vitess proto definitions
 
 The following commands are used to import the Vitess proto definitions. [1] [2] 
 
